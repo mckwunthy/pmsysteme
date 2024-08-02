@@ -1,0 +1,312 @@
+.limit-r {
+    border: 1px solid red;
+}
+
+.limit-b {
+    border: 1px solid blue;
+}
+
+.mckwunthy {
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*CONNEXION*/
+.home div>form.formAuthent {
+    border: 5px solid black;
+    border-radius: 5px;
+    margin-top: 150px;
+    padding: 10px;
+}
+
+.home div>form.formAuthent div>span {
+    width: 100px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.home div>form.formAuthent div>input {
+    border: 1px solid black;
+}
+
+.home img.bg-1 {
+    width: 750px;
+}
+
+/*create account*/
+.updatForm {
+    width: 525px;
+    position: absolute;
+    background-color: white;
+    bottom: 40px;
+    /* left: 130px; */
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.addbooks {
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    text-align: center;
+    /* background-color: teal; */
+    /* background-color: green; */
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.updatForm form div span {
+    width: 150px;
+    font-weight: bold;
+    color: white;
+}
+
+/*CREATE PROJECT*/
+/* .createproject {
+ margin-top: 50px; 
+} */
+
+.createproject .titleBand,
+.dashboard .titleBand,
+.manageTask .titleBand {
+    margin: 50px 0 20px 0;
+    border: 5px ridge black;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    background-color: orange;
+}
+
+.createproject>.box-left form,
+.manageTask>.box-left form {
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.createproject div>form.formCreatProject div>span,
+.manageTask div>form.formAddTask div>span {
+    width: 150px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.infos {
+    font-size: 0.8rem;
+    font-style: italic;
+    color: orange;
+    margin-top: -15px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.error {
+    color: red;
+    width: 400px;
+    height: 20px;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+div.table {
+    height: 450px;
+    width: 700px;
+    /* border: 1px solid red; */
+    margin: 5px auto;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+}
+
+table tr {
+    height: 40px;
+}
+
+table tr th {
+    font-weight: bold;
+    background-color: black;
+    color: orange;
+}
+
+table tbody tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+/*DASHBOARD TASK*/
+.dashboard div.table {
+    height: 450px;
+    width: 100%;
+    /* border: 1px solid red; */
+    margin: 5px auto;
+    overflow: auto;
+}
+
+.fa-circle-plus {
+    cursor: pointer;
+    color: green;
+    border-radius: 100px;
+}
+
+.fa-circle-plus:hover {
+    color: black;
+}
+
+.taskaffichetitle {
+    /* border: 5px solid orange; */
+    width: 600px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: green;
+}
+
+.taskAfiicheBox {
+    /* border: 5px solid orange; */
+    width: 600px;
+    background-color: #ccc;
+}
+
+.taskBox {
+    position: absolute;
+    right: 400px;
+    top: 150px;
+    background-color: #ccc;
+    padding: 5px;
+    border: 1px ridge black;
+    /* height: 400px;
+    overflow: auto; */
+}
+
+.taskAfiicheBox table tr td {
+    text-align: left;
+}
+
+.leftBoxDashboard {
+    margin-top: 50px;
+}
+
+.leftBoxDashboard div img {
+    width: 300px;
+}
+
+/*MESSAGE*/
+.message .title {
+    color: green;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.messageTable {
+    border: 1px solid orange;
+    padding: 5px;
+}
+
+.message .emailBox {
+    height: 600px;
+    border: 2px solid green;
+    margin-top: 20px;
+    overflow: auto;
+}
+
+.title+div {
+    border: 3px solid orange;
+    padding: 5px;
+}
+
+.messageTable tr:nth-child(2n) {
+    background-color: #ccc;
+}
+
+.messageTable tr td:nth-child(1) {
+    width: 100px;
+}
+
+.messageTable tr td:nth-child(2) {
+    width: 250px;
+}
+
+.messageTable tr td:nth-child(3) {
+    text-align: center;
+}
+
+.messageShowBox {
+    height: 600px;
+    border: 2px solid green;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.messageContainer {
+    border: 2px solid orange;
+    height: 75%;
+    overflow: auto;
+}
+
+.messageToSend {
+    /* border: 2px solid green; */
+    height: 20%;
+    overflow: auto;
+    margin-top: 5px;
+}
+
+.messageToSend form textarea {
+    margin-top: 10px;
+    margin-left: 10px;
+    resize: none;
+    border: 2px solid black;
+}
+
+.messageToSend form input[type="submit"] {
+    height: 90px;
+    margin-top: 10px;
+    margin-left: 5px;
+    width: 70px;
+    position: absolute;
+    background-color: green;
+    color: white;
+}
+
+.messageLeftReceive {
+    border: 1px solid blue;
+    border-radius: 10px 10px 10px 0;
+    width: 50%;
+    padding: 2px;
+    background-color: rgb(144, 144, 237);
+}
+
+.messageRightSend {
+    border: 1px solid green;
+    border-radius: 10px 10px 0 10px;
+    width: 50%;
+    margin-left: 50%;
+    padding: 2px;
+    background-color: rgb(153, 220, 153);
+}
+
+.messageRightSend em,
+.messageLeftReceive em {
+    font-size: 0.8rem;
+}
+
+/* .conversationIci {
+    font-size: 2rem;
+    text-align: center;
+    color: green;
+    margin-top: 180px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0.4;
+} */

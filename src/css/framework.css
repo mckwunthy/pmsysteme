@@ -1,0 +1,579 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* POSITION */
+.fixed {
+    position: fixed;
+}
+
+.relative {
+    position: relative;
+}
+
+.absolute {
+    position: absolute;
+}
+
+/* END POSITION */
+
+/* FLEX */
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.flex-4 {
+    flex: 4;
+}
+
+.flex-5 {
+    flex: 5;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcsa {
+    justify-content: space-around;
+}
+
+.jcsb {
+    justify-content: space-between;
+}
+
+.jcse {
+    justify-content: space-evenly;
+}
+
+.aic {
+    align-items: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.no-wrap {
+    flex-wrap: nowrap;
+}
+
+/* EN FLEX */
+/* GAP */
+.gap-2 {
+    gap: 2px;
+}
+
+.gap-5 {
+    gap: 5px;
+}
+
+.gap-10 {
+    gap: 10px;
+}
+
+.gap-15 {
+    gap: 15px;
+}
+
+.gap-20 {
+    gap: 20px;
+}
+
+.gap-30 {
+    gap: 30px;
+}
+
+.gap-40 {
+    gap: 40px;
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+/* end GAP */
+
+/* display */
+.none {
+    display: none;
+}
+
+.db {
+    display: block;
+}
+
+.dib {
+    display: inline-block;
+}
+
+.di {
+    display: inline;
+}
+
+/* end display */
+
+/* INPUT - SELECT - TEXTAREA */
+input,
+textarea,
+select {
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* end INPUT - SELECT*/
+
+/* a : link */
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* end a : link */
+
+/* element de liste */
+ul {
+    margin: 0;
+    cursor: pointer;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+/* end element de liste */
+
+/* button */
+button {
+    cursor: pointer;
+}
+
+/* end button */
+
+/* border line */
+.b {
+    border: 1px solid red;
+}
+
+/* end border line */
+
+/* box shadow */
+.boxshadow-1 {
+    box-shadow: 1px 5px 15px rgb(0 0 0 /30%);
+}
+
+.boxshadow-2 {
+    box-shadow: 1px 5px 15px rgb(0 0 0 /30%),
+        1px 5px 15px rgb(0 0 0 /30%);
+}
+
+/* end box shadow */
+
+/* border radius */
+.radius-5 {
+    border-radius: 5px;
+}
+
+.radius-10 {
+    border-radius: 10px;
+}
+
+.radius-15 {
+    border-radius: 15px;
+}
+
+.radius-20 {
+    border-radius: 20px;
+}
+
+.radius-25 {
+    border-radius: 25px;
+}
+
+/* end border radius */
+
+/* padding */
+.pad-2 {
+    padding: 2px;
+}
+
+.pad-5 {
+    padding: 5px;
+}
+
+.pad-10 {
+    padding: 10px;
+}
+
+.pad-15 {
+    padding: 15px;
+}
+
+.pad-20 {
+    padding: 20px;
+}
+
+.pad-25 {
+    padding: 25px;
+}
+
+.pad-30 {
+    padding: 30px;
+}
+
+.pad-40 {
+    padding: 40px;
+}
+
+.pad-l-2 {
+    padding-left: 2px;
+}
+
+.pad-l-5 {
+    padding-left: 5px;
+}
+
+.pad-l-10 {
+    padding-left: 10px;
+}
+
+.pad-l-15 {
+    padding-left: 15px;
+}
+
+.pad-l-20 {
+    padding-left: 20px;
+}
+
+.pad-l-25 {
+    padding-left: 25px;
+}
+
+.pad-l-30 {
+    padding-left: 30px;
+}
+
+.pad-l-40 {
+    padding-left: 40px;
+}
+
+.pad-r-2 {
+    padding-right: 2px;
+}
+
+.pad-r-5 {
+    padding-right: 5px;
+}
+
+.pad-r-10 {
+    padding-right: 10px;
+}
+
+.pad-r-15 {
+    padding-right: 15px;
+}
+
+.pad-r-20 {
+    padding-right: 20px;
+}
+
+.pad-r-25 {
+    padding-right: 25px;
+}
+
+.pad-r-30 {
+    padding-right: 30px;
+}
+
+.pad-r-40 {
+    padding-right: 40px;
+}
+
+.pad-t-2 {
+    padding-top: 2px;
+}
+
+.pad-t-5 {
+    padding-top: 5px;
+}
+
+.pad-t-10 {
+    padding-top: 10px;
+}
+
+.pad-t-15 {
+    padding-top: 15px;
+}
+
+.pad-t-20 {
+    padding-top: 20px;
+}
+
+.pad-t-25 {
+    padding-top: 25px;
+}
+
+.pad-t-30 {
+    padding-top: 30px;
+}
+
+.pad-t-40 {
+    padding-top: 40px;
+}
+
+.pad-b-2 {
+    padding-bottom: 2px;
+}
+
+.pad-b-5 {
+    padding-bottom: 5px;
+}
+
+.pad-b-10 {
+    padding-bottom: 10px;
+}
+
+.pad-b-15 {
+    padding-bottom: 15px;
+}
+
+.pad-b-20 {
+    padding-bottom: 20px;
+}
+
+.pad-b-25 {
+    padding-bottom: 25px;
+}
+
+.pad-b-30 {
+    padding-bottom: 30px;
+}
+
+.pad-b-40 {
+    padding-bottom: 40px;
+}
+
+/* end padding */
+
+/* margin */
+.marg-2 {
+    margin: 2px;
+}
+
+.marg-5 {
+    margin: 5px;
+}
+
+.marg-10 {
+    margin: 10px;
+}
+
+.marg-15 {
+    margin: 15px;
+}
+
+.marg-20 {
+    margin: 20px;
+}
+
+.marg-25 {
+    margin: 25px;
+}
+
+.marg-30 {
+    margin: 30px;
+}
+
+.marg-40 {
+    margin: 40px;
+}
+
+.marg-l-2 {
+    margin-left: 2px;
+}
+
+.marg-l-5 {
+    margin-left: 5px;
+}
+
+.marg-l-10 {
+    margin-left: 10px;
+}
+
+.marg-l-15 {
+    margin-left: 15px;
+}
+
+.marg-l-20 {
+    margin-left: 20px;
+}
+
+.marg-l-25 {
+    margin-left: 25px;
+}
+
+.marg-l-30 {
+    margin-left: 30px;
+}
+
+.marg-l-40 {
+    margin-left: 40px;
+}
+
+.marg-r-2 {
+    margin-right: 2px;
+}
+
+.marg-r-5 {
+    margin-right: 5px;
+}
+
+.marg-r-10 {
+    margin-right: 10px;
+}
+
+.marg-r-15 {
+    margin-right: 15px;
+}
+
+.marg-r-20 {
+    margin-right: 20px;
+}
+
+.marg-r-25 {
+    margin-right: 25px;
+}
+
+.marg-r-30 {
+    margin-right: 30px;
+}
+
+.marg-r-40 {
+    margin-right: 40px;
+}
+
+.marg-t-2 {
+    margin-top: 2px;
+}
+
+.marg-t-5 {
+    margin-top: 5px;
+}
+
+.marg-t-10 {
+    margin-top: 10px;
+}
+
+.marg-t-15 {
+    margin-top: 15px;
+}
+
+.marg-t-20 {
+    margin-top: 20px;
+}
+
+.marg-t-25 {
+    margin-top: 25px;
+}
+
+.marg-t-30 {
+    margin-top: 30px;
+}
+
+.marg-t-40 {
+    margin-top: 40px;
+}
+
+.marg-b-2 {
+    margin-bottom: 2px;
+}
+
+.marg-b-5 {
+    margin-bottom: 5px;
+}
+
+.marg-b-10 {
+    margin-bottom: 10px;
+}
+
+.marg-b-15 {
+    margin-bottom: 15px;
+}
+
+.marg-b-20 {
+    margin-bottom: 20px;
+}
+
+.marg-b-25 {
+    margin-bottom: 25px;
+}
+
+.marg-b-30 {
+    margin-bottom: 30px;
+}
+
+.marg-b-40 {
+    margin-bottom: 40px;
+}
+
+/* end margin */
+
+/* picture manage */
+.pp-small {
+    width: 50px;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+.pp-average {
+    width: 150px;
+    /* border-radius: 50px; */
+    margin: 5px;
+}
+
+.pp-big {
+    width: 300px;
+    /* border-radius: 50px; */
+    margin: 10px;
+}
+
+/* end picture manage */
+
+/* centrer element : qui a deja une position absolute et son parent direct relative*/
+.centrer-elmt {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end centrer element */
+
+/* element de border test */
+.border-test {
+    border: 2px solid red;
+}
+
+/* end element de border test */
+
+/* couleur */
+/* end couleur */
