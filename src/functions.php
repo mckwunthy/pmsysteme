@@ -322,7 +322,7 @@ function displayManagetask()
   if (isset($_POST["addTask"]) && !empty($_POST["task"])) {
     //enregistrement des donnees en bdd
     $createTaskResult = $model->addTask($_POST["name"], $_POST["task"], $_POST["email"]);
-    // print_r($createTaskResult);
+    // print_r($_POST);
     // exit();
     if ($createTaskResult) {
       echo '
@@ -370,6 +370,8 @@ function displayManagetask()
             <span class="input-group-text" id="inputGroup-sizing-default">Project name</span>
                 <select class="form-select selectProject" name="name" aria-label="Default select example" required>
                     <option selected>choose project</option>';
+  // print_r($project);
+  // exit();
   if (!empty($project)) {
     foreach ($project as $key => $value) {
       $result .= '<option value="' . $value["name"] . '">' . strtoupper($value["name"]) . '</option>';
@@ -468,7 +470,7 @@ function displayDashboard()
   <div class="row">
     <div class="col-3 leftBoxDashboard">
       <div>
-        <img src="images' . SP . 'bg-3.png" alt="illustration" class="bg-1"/>
+        <img src="./images' . SP . 'bg-3.png" alt="illustration" class="bg-1"/>
       </div>
     </div>
     <div class="col-9 dashboard">
@@ -490,12 +492,12 @@ function displayDashboard()
           <tbody>';
   //donnee des tasks
   $taskData = $model->Projectprogress();
-  if ($taskData) {
 
-    // print_r($taskData);
-    // exit();
-    foreach ($project as $key => $value) {
-      $result .= '
+
+  // print_r($taskData);
+  // exit();
+  foreach ($project as $key => $value) {
+    $result .= '
               <tr>
                 <td scope="col">' . $value["id"] . '</td>
                 <td scope="col">' . $value["name"] . '</td>
@@ -505,6 +507,7 @@ function displayDashboard()
                 <td scope="col">' . $value["create_at"] . '</td>
                 <td scope="col">
                 ';
+    if ($taskData) {
       foreach ($taskData as $keyTask => $valueTassk) {
         if ($value["name"] == $valueTassk["project_name"]) {
           //codification id
@@ -518,8 +521,11 @@ function displayDashboard()
       $result .= '</td>
                 <td scope="col">';
       foreach ($taskData as $keyTask => $valueTassk) {
+        // print_r($taskData);
+        // print_r($progression);
+        // exit();
         if ($value["name"] == $valueTassk["project_name"]) {
-          $result .= ($progression[$valueTassk["progress_tot"] - 1]["progression"]) / $valueTassk["nbre_task"] . ' %';
+          $result .= floor((($valueTassk["progress_tot"] / 11) / $valueTassk["nbre_task"]) * 100) . ' %';
         }
       }
       $result .= '</td>';
@@ -549,6 +555,7 @@ function displayDashboard()
   $taskAffiche = '<div class="taskBox">';
   $taskFull = $model->ProjectprogressBrut();
   // print_r($taskFull);
+  // print_r($members);
   // exit();
   if (isset($taskFull) && !empty($taskFull)) {
 
@@ -574,7 +581,14 @@ function displayDashboard()
             <tr>
               <td>' . $key + 1 . '</td>
               <td>' . $value["task"] . '</td>
-              <td>' . $members[$value["performer_id"] - 1]["email"] . '</td>
+              <td>';
+      foreach ($members as $valueMembers) {
+        if ($value["performer_id"] == $valueMembers["id"]) {
+          $taskAffiche .= $valueMembers["email"];
+        }
+      }
+
+      $taskAffiche .= '</td>
               <td>' . $progression[$value["progress_id"] - 1]["progression"] . ' %</td>
             </tr>
           </tbody>

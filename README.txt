@@ -19,7 +19,7 @@
             -renseigner la tâche et valider
 
                         - Réalisation de tâches -
-            - dans la liste de droite, les tâches qui vous sont attribuées apparaissent
+            - dans la liste de droite, uniquement les tâches qui vous sont attribuées apparaissent
             - cliquez sur "Do Task" pour réaliser la tâche
             NB : la progression (réalisation des tâche) se fait selon une échelle de 0 à 100% (de 10% en 10%)
             - une fois la tâche réalisée à 100%, le boutton "Do Task" disparait
